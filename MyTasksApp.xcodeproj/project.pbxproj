@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		718CC0E02560012800AA9586 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718CC0DF2560012800AA9586 /* AppDelegate.swift */; };
 		718CC0E22560012800AA9586 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718CC0E12560012800AA9586 /* SceneDelegate.swift */; };
-		718CC0E42560012800AA9586 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718CC0E32560012800AA9586 /* ViewController.swift */; };
 		718CC0E72560012800AA9586 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 718CC0E52560012800AA9586 /* Main.storyboard */; };
 		718CC0E92560012800AA9586 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 718CC0E82560012800AA9586 /* Assets.xcassets */; };
 		718CC0EC2560012800AA9586 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 718CC0EA2560012800AA9586 /* LaunchScreen.storyboard */; };
 		718CC0F72560012900AA9586 /* MyTasksAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718CC0F62560012900AA9586 /* MyTasksAppTests.swift */; };
 		718CC1022560012900AA9586 /* MyTasksAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718CC1012560012900AA9586 /* MyTasksAppUITests.swift */; };
+		718CC114256001BE00AA9586 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718CC113256001BE00AA9586 /* TasksViewController.swift */; };
+		718CC11A256001FE00AA9586 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718CC119256001FE00AA9586 /* File.swift */; };
+		718CC12225600B8E00AA9586 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718CC12125600B8E00AA9586 /* NavigationController.swift */; };
+		718CC13025602C5700AA9586 /* Folder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718CC12F25602C5700AA9586 /* Folder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,6 @@
 		718CC0DC2560012800AA9586 /* MyTasksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTasksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		718CC0DF2560012800AA9586 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		718CC0E12560012800AA9586 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		718CC0E32560012800AA9586 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		718CC0E62560012800AA9586 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		718CC0E82560012800AA9586 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		718CC0EB2560012800AA9586 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		718CC0FD2560012900AA9586 /* MyTasksAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTasksAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		718CC1012560012900AA9586 /* MyTasksAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTasksAppUITests.swift; sourceTree = "<group>"; };
 		718CC1032560012900AA9586 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		718CC113256001BE00AA9586 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		718CC119256001FE00AA9586 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		718CC12125600B8E00AA9586 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		718CC12F25602C5700AA9586 /* Folder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Folder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +105,10 @@
 		718CC0DE2560012800AA9586 /* MyTasksApp */ = {
 			isa = PBXGroup;
 			children = (
+				718CC118256001CE00AA9586 /* Task */,
+				718CC1122560019E00AA9586 /* View Controllers */,
 				718CC0DF2560012800AA9586 /* AppDelegate.swift */,
 				718CC0E12560012800AA9586 /* SceneDelegate.swift */,
-				718CC0E32560012800AA9586 /* ViewController.swift */,
 				718CC0E52560012800AA9586 /* Main.storyboard */,
 				718CC0E82560012800AA9586 /* Assets.xcassets */,
 				718CC0EA2560012800AA9586 /* LaunchScreen.storyboard */,
@@ -126,6 +133,24 @@
 				718CC1032560012900AA9586 /* Info.plist */,
 			);
 			path = MyTasksAppUITests;
+			sourceTree = "<group>";
+		};
+		718CC1122560019E00AA9586 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				718CC113256001BE00AA9586 /* TasksViewController.swift */,
+				718CC12125600B8E00AA9586 /* NavigationController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		718CC118256001CE00AA9586 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				718CC119256001FE00AA9586 /* File.swift */,
+				718CC12F25602C5700AA9586 /* Folder.swift */,
+			);
+			path = Task;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +283,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				718CC0E42560012800AA9586 /* ViewController.swift in Sources */,
+				718CC12225600B8E00AA9586 /* NavigationController.swift in Sources */,
+				718CC114256001BE00AA9586 /* TasksViewController.swift in Sources */,
+				718CC11A256001FE00AA9586 /* File.swift in Sources */,
 				718CC0E02560012800AA9586 /* AppDelegate.swift in Sources */,
 				718CC0E22560012800AA9586 /* SceneDelegate.swift in Sources */,
+				718CC13025602C5700AA9586 /* Folder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +467,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QU9ZBG8S59;
 				INFOPLIST_FILE = MyTasksApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,6 +487,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QU9ZBG8S59;
 				INFOPLIST_FILE = MyTasksApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
