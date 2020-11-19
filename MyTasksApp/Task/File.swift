@@ -9,6 +9,7 @@ import UIKit
 
 protocol File {
     var name: String { get }
+    var image: UIImage? { get }
     var description: String { get }
     var delegate: FilePresentable? { get set }
     func createViewController() -> UIViewController
